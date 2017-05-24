@@ -1,0 +1,9 @@
+https://support.google.com/accounts?hl=en
+Response Code >> 200
+
+https://accounts.google.com/TOS?loc=MD&hl=en&privacy=true
+Response Code >> 200
+
+https://accounts.google.com/TOS?loc=MD&hl=en
+Response Code >> 200
+

@@ -1,0 +1,12 @@
+https://www.google.com/setprefs?suggon=2&prev=https://www.google.com/&sig=0_frBRtL7-w6y_ip0AFHgmiLdT_oQ%3D
+Response Code >> 200
+
+https://mail.google.com/mail/?tab=wm
+Response Code >> 200
+
+https://www.google.com/imghp?hl=en&tab=wi&ei=8QIeWczVNsetswHY5IPoCA&ved=0EKouCBgoAQ
+Response Code >> 200
+
+https://www.google.com/intl/en/options/
+Response Code >> 200
+
