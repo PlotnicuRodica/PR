@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="594.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <HBox alignment="CENTER" fillHeight="false" layoutX="9.0" layoutY="11.0" prefHeight="153.0" prefWidth="581.0" AnchorPane.bottomAnchor="430.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="11.0">
+         <children>
+            <HBox fillHeight="false" prefHeight="100.0" prefWidth="383.0">
+               <children>
+                  <TextField fx:id="usernameField" promptText="Username">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <PasswordField fx:id="passwordField" promptText="Password">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </PasswordField>
+                  <Label fx:id="statusLabel" visible="false" />
+               </children>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="139.0">
+               <children>
+                  <Label fx:id="loggedLabel" text="Logged in." textFill="#20b52a" visible="false" />
+                  <Button fx:id="loginButton" mnemonicParsing="false" onAction="#onLogin" text="Login">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="registerButton" mnemonicParsing="false" onAction="#onRegister" text="Register">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox layoutX="53.0" layoutY="164.0" prefHeight="339.0" prefWidth="494.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="339.0" prefWidth="177.0">
+               <children>
+                  <Button fx:id="statButton" mnemonicParsing="false" onAction="#onStat" prefWidth="150.0" text="Proprieties">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="listButton" mnemonicParsing="false" onAction="#onList" prefWidth="150.0" text="List all">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="buyButton" mnemonicParsing="false" onAction="#onBuy" prefWidth="150.0" text="Buy">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="listMineButton" mnemonicParsing="false" onAction="#onListMine" prefWidth="150.0" text="List bought">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="cancelMine" mnemonicParsing="false" onAction="#onCancelMine" prefHeight="39.0" prefWidth="150.0" text="Cancel bought">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="quitButton" mnemonicParsing="false" onAction="#onQuit" text="Exit" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" fillWidth="false" prefHeight="339.0" prefWidth="319.0">
+               <children>
+                  <ListView fx:id="listView" prefHeight="276.0" prefWidth="254.0" />
+               </children>
+            </VBox>
+         </children></HBox>
+      <HBox alignment="CENTER" layoutX="162.0" layoutY="503.0" prefHeight="74.0" prefWidth="275.0">
+         <children>
+            <Label fx:id="statusLabel" text="Status" visible="false" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
